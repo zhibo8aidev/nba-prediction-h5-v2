@@ -1,8 +1,8 @@
 project_id: nba-prediction-h5-v2
 title: NBA预测 H5
 client_target: both
-current_stage: design_review
-stage_status: waiting_review
+current_stage: tech_design_tasks
+stage_status: in_progress
 source_inputs:
   idea: 搭建一个 NBA 预测 H5 活动页，严格按用户提供的 PRD 与设计规范原文执行，覆盖大小分竞猜、AB 实验分组、提交弹窗、吧币抽奖规则与活动规则展示。
   existing_prd:
@@ -22,8 +22,7 @@ available_artifacts:
   backend_code: false
   test_report: false
   release_plan: false
-pending_reviews:
-- design_review
+pending_reviews: []
 openspec_change_id: null
 react_native_mockups:
   status: ready_for_review
@@ -89,18 +88,18 @@ execution_policy:
     - design.md
     - tasks.md
 next_actions:
-- Wait for explicit design approval
+- Produce and review tasks.md
 orchestration_mode: strong
 validation:
   required_handoffs:
-  - designer -> leader
-  required_runs:
-  - ACP Gemini design run
-  artifact_origin_verified: true
+  - leader -> frontend
+  - leader -> backend
+  required_runs: []
+  artifact_origin_verified: false
   last_validation_note: null
 last_decision:
-  stage: prd_review
+  stage: design_review
   decision: approved
   by: ou_36621428c238a86c202f2273e50e09a3
-  at: '2026-05-11T15:38:36'
-  note: 用户在群聊中明确批准 nba-prediction-h5-v2 的 PRD/specs，允许进入 design 阶段。
+  at: '2026-05-11T15:51:36'
+  note: 按用户审核意见已移除 mockup 中多余文案‘科技赋能’，其余设计内容通过，允许进入 tech_design_tasks。
