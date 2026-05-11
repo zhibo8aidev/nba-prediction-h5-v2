@@ -17,7 +17,7 @@ available_artifacts:
   specs_dir: true
   design_md: true
   react_native_mockups: true
-  tasks_md: false
+  tasks_md: true
   client_code: false
   backend_code: false
   test_report: false
@@ -88,7 +88,8 @@ execution_policy:
     - design.md
     - tasks.md
 next_actions:
-- Produce and review tasks.md
+- Review updated technical-design and tasks artifacts
+- Wait for user feedback or tech review instruction
 orchestration_mode: strong
 validation:
   required_handoffs:
@@ -96,7 +97,8 @@ validation:
   - leader -> backend
   required_runs: []
   artifact_origin_verified: false
-  last_validation_note: null
+  last_validation_note: 2026-05-11 leader 已同步“用户每次活动可参与一次竞猜，竞猜成功后可获得抽奖机会”口径到规则文案与需求/技术产物，当前仍停留在
+    tech_design_tasks，未推进审批。
 last_decision:
   stage: design_review
   decision: approved

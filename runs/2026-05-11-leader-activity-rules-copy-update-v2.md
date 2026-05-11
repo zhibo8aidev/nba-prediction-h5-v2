@@ -4,16 +4,24 @@
 - Project: nba-prediction-h5-v2
 - Stage: tech_design_tasks
 - Owner: leader
-- Action: update_activity_rules_display_copy_v2
+- Action: sync_activity_rule_copy_and_requirement_docs
 
 ## Trigger
-- 用户提供了新的活动规则展示文案，要求按该版本修改页面规则区。
+- 用户要求将“用户每次活动可参与一次竞猜，竞猜成功后可获得抽奖机会。”同步到活动规则文案和需求中。
 
 ## Updated Artifacts
 - `artifacts/source-prd/prd.md`
 - `artifacts/react_native_mockups/index.html`
+- `artifacts/proposal.md`
+- `artifacts/specs/product-spec.md`
+- `artifacts/specs/technical-notes.md`
+- `artifacts/technical-design.md`
+- `artifacts/tasks.md`
+- `handoffs/2026-05-11-architect-to-leader-tech-design.md`
+- `project.yaml`
 
 ## Result
-- 已将活动规则展示文案替换为用户刚提供的新版本。
-- 当前 mockup 中活动规则区与 source PRD 的规则文案已保持一致。
-- 本次先按“展示文案修改”处理，未自动改动业务功能规则表与技术防重约束。
+- 已将活动规则区展示文案与需求文档中的参与方式口径统一为：`用户每次活动可参与一次竞猜，竞猜成功后可获得抽奖机会。`
+- 产品、技术、任务拆解与交接记录已同步到“每次活动一次”的口径。
+- 技术实现层保留兼容说明：当前一期活动仍可按 `match_id + uid` / `uid + match_id` 落地唯一约束与稳定分组，不影响后续扩展到活动维度。
+- 本次未推进审批阶段，项目仍停留在 `tech_design_tasks`。
