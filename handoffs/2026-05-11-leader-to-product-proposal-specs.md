@@ -9,6 +9,8 @@
 ## Approved inputs
 - `artifacts/source-prd/prd.md`
 - `artifacts/source-design/design-spec.md`
+- `artifacts/source-design/hero-kv.md`
+- `artifacts/source-design/assets/hero-kv.jpg`
 
 ## Requirements
 - 必须把源 PRD 与源设计规范视为原文输入，不得擅自归一化、润色或覆盖原意。
