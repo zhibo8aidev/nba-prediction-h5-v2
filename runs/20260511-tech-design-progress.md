@@ -4,3 +4,5 @@
 - [15:56] 已新增 artifacts/tasks.md，按前端、后端、数据与接口、埋点、联调与验收分组拆解依赖和验收口径
 - [15:56] 已按要求执行 GitHub 同步脚本，tasks 产物推送状态为已同步
 - [15:57] 已新增 handoffs/2026-05-11-architect-to-leader-tech-design.md，汇总交付产物、关键技术决策、外部依赖和运营规则口径
+- [15:57] 已按要求执行 GitHub 同步脚本，architect handoff 产物推送状态为已同步
+- [15:57] 已新增 runs/2026-05-11-architect-tech-design.md，记录 ACP、Codex、tech-design 执行过程、产物、同步结果和剩余外部依赖
