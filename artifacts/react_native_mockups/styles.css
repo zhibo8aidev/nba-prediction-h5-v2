@@ -282,6 +282,15 @@ body {
   margin-bottom: 6px;
 }
 
+.rules-sublist {
+  margin-top: 6px;
+  padding-left: 14px;
+}
+
+.rules-sublist li {
+  margin-bottom: 4px;
+}
+
 /* Modals */
 .modal-overlay {
   position: fixed;

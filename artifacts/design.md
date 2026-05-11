@@ -41,7 +41,7 @@
 ## 3. UI States
 
 ### 3.1 Default Landing Page
-*   Shows Header, Matchup (no selection), Expert/AI analysis, and Rules.
+*   Shows Header, Matchup (no selection), Expert/AI analysis, and the full approved activity rules copy from the PRD.
 
 ### 3.2 Option Selected
 *   Selected option (e.g., "总分高于200.5") turns Blue with white text.
@@ -69,3 +69,4 @@
 *   Target Width: 390px.
 *   Margins: 16px lateral.
 *   Vertical Spacing: 16px between cards.
+*   Rules Section: must render the exact approved activity-rules copy, including participation, prize notice, Apple disclaimer, and all three disclaimer sub-items, without summary rewriting.

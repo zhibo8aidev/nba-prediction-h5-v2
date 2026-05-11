@@ -1,0 +1,2 @@
+- [15:52] 已读取 approved inputs 与 leader handoff，确认 tech_design_tasks 范围、输出文件和禁止扩 scope 约束
+- [15:54] 已新增 artifacts/technical-design.md，覆盖 H5 架构、前后端边界、AB 分组、登录回流、防重、已提交态、派奖字段和外部依赖
