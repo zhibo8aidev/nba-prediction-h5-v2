@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>NBA预测 - 玩竞猜，送吧币</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header & KV -->
+    <header class="header-kv">
+      <div class="back-btn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </div>
+      <!-- Placeholder for hero-kv.jpg -->
+      <img src="https://via.placeholder.com/390x220/3b82f6/ffffff?text=NBA+PREDICTION+KV" alt="Hero KV">
+    </header>
+
+    <!-- Matchup Card -->
+    <main class="card matchup-card">
+      <div class="deadline">竞猜截止：1月8日 07:00</div>
+      <div class="teams">
+        <div class="team">
+          <div class="team-logo"><img src="https://via.placeholder.com/48?text=GSW" alt="GSW"></div>
+          <div class="team-name">勇士</div>
+        </div>
+        <div class="vs">VS</div>
+        <div class="team">
+          <div class="team-logo"><img src="https://via.placeholder.com/48?text=LAL" alt="LAL"></div>
+          <div class="team-name">湖人</div>
+        </div>
+      </div>
+      <div class="options-grid">
+        <div class="opt-btn" onclick="selectOption(this, 'over')">总分高于 200.5</div>
+        <div class="opt-btn" onclick="selectOption(this, 'under')">总分低于 200.5</div>
+      </div>
+      <button id="submitBtn" class="submit-btn" disabled onclick="showWillingnessModal()">提交预测</button>
+    </main>
+
+    <!-- Expert Analysis -->
+    <section class="card analysis-card">
+      <div class="analysis-header">
+        <div class="title-indicator expert-indicator"></div>
+        <div class="analysis-title">专家预测</div>
+      </div>
+      <div class="profile">
+        <div class="avatar"><img src="https://via.placeholder.com/48?text=磊" alt="磊哥"></div>
+        <div class="expert-info">
+          <div class="name">磊哥看球</div>
+          <div class="tag">近10中8</div>
+        </div>
+      </div>
+      <div class="analysis-bubble">
+        我偏好“大于200.5分”。这场比赛很可能会演变为一场对攻大战。进攻方面，两队都拥有能够撕开防线的得分点，可以持续压迫防守阵型并创造出手回合...
+      </div>
+    </section>
+
+    <!-- AI View -->
+    <section class="card analysis-card">
+      <div class="analysis-header">
+        <div class="title-indicator ai-indicator"></div>
+        <div class="analysis-title">AI 观点</div>
+      </div>
+      <div class="profile">
+        <div class="avatar"><img src="https://via.placeholder.com/48?text=AI" alt="AI"></div>
+        <div class="expert-info">
+          <div class="name">专家助理</div>
+          <div class="tag">科技赋能</div>
+        </div>
+      </div>
+      <div class="analysis-bubble">
+        结合专家分析不难得出，两边的防守都不太行，护框和轮换都有明显漏洞，想按住对方得分有点难。而且两队都有着撕裂防线的点，进攻火力能一直续上。这比赛节奏只会被打超快，要演变成对攻战。
+      </div>
+    </section>
+
+    <!-- Rules -->
+    <footer class="rules-section">
+      <h3 class="rules-title">活动规则：</h3>
+      <ol class="rules-list">
+        <li>每场比赛每个用户仅限参与一次竞猜，提交后无法更改。</li>
+        <li>领奖须知：如您已获奖，我们会将获奖信息以短信形式和站内信形式发送给您。</li>
+        <li>奖品将于活动结束后30个工作日内发货。</li>
+        <li>Apple未以任何形式参与和赞助本活动。</li>
+        <li>本规则最终解释权归平台所有。</li>
+      </ol>
+    </footer>
+
+    <!-- Willingness Modal -->
+    <div id="willingnessModal" class="modal-overlay">
+      <div class="modal-content">
+        <div class="modal-text">您是否愿意在后续的竞猜活动中继续收到 <strong>磊哥看球</strong> 的专家分析？</div>
+        <div class="modal-btns">
+          <button class="modal-btn btn-ghost" onclick="showSuccessModal()">不愿意</button>
+          <button class="modal-btn btn-primary" onclick="showSuccessModal()">愿意</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal-overlay">
+      <div class="modal-content">
+        <div style="font-size: 40px; margin-bottom: 16px;">✅</div>
+        <div class="modal-text">提交成功。比赛结束后我们将在竞猜正确中进行抽奖，如中奖我们将通过短信和站内信进行告知。</div>
+        <button class="modal-btn btn-primary" style="width: 100%;" onclick="closeModals()">知道了</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
